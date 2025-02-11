@@ -4,7 +4,7 @@ export default function QuizApp() {
 
     const [Question,setQusertion]= useState([
         {
-            questionText:"wwhere is the capital of USA?",
+            questionText:"where is the capital of USA?",
 
             answers:[
                 {answerText:"New Youk",isCorrect:false},
@@ -55,7 +55,7 @@ export default function QuizApp() {
 
     <div className="text-white">
         <p>Question 1/4</p>
-        <p className="pt-2 font-bold">where is the capital of USA?</p>
+        <p className="pt-2 font-bold">{Question[currentQuestion].questionText}</p>
     </div>
     <div className="text-white flex flex-col gap-3 items-center ">
         <button className="hover:bg-blue-700 p-1 border rounded-md w-36">Washington</button>
