@@ -76,7 +76,7 @@ export default function QuizApp() {
       <div className="container shadow-2xl Quiz_app rounded-xl mx-auto mt-24 p-5 w-[430px] h-[220px] bg-blue-900">
         {showScore ? (
           <div className="text-white flex justify-center items-center w-full h-full  ">
-            <span className="text-2xl">your score is 1 of 4</span>
+            <span className="text-2xl">your score is {score} of 4</span>
           </div>
         ) : (
           <div className=" flex gap-10 justify-center">
