@@ -44,7 +44,9 @@ export default function QuizApp() {
     ])
 
     const [currentQuestion,setCurrentQuestion]=useState(0)
-    
+    const [showScore,setShowScore]=useState(false)
+    const [score,setScore]=useState(0)
+
 
 
 
