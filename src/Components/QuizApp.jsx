@@ -52,6 +52,12 @@ export default function QuizApp() {
 
         console.log(iscurrect);
 
+        if(iscurrect){
+            setScore(prev=>{
+                return prev +1
+            })
+        }
+
     }
 
 
