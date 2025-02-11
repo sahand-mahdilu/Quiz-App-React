@@ -43,6 +43,9 @@ export default function QuizApp() {
         },
     ])
 
+    const [currentQuestion,setCurrentQuestion]=useState(0)
+    
+
 
 
   return (
