@@ -48,6 +48,13 @@ export default function QuizApp() {
     const [score,setScore]=useState(0)
 
 
+    const clickHandler=(iscurrect)=>{
+
+        console.log(iscurrect);
+
+    }
+
+
 
 
   return (
@@ -62,7 +69,7 @@ export default function QuizApp() {
     {Question[currentQuestion].answers.map(answer=>{
 
         
-return <button className="hover:bg-blue-700 p-1 border rounded-md w-36">{answer.answerText}</button>
+    return <button onClick={()=>{clickHandler(answer.isCorrect)}} className="hover:bg-blue-700 p-1 border rounded-md w-36">{answer.answerText}</button>
     })}
        
  
