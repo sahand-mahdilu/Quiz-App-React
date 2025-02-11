@@ -58,10 +58,13 @@ export default function QuizApp() {
         <p className="pt-2 font-bold">{Question[currentQuestion].questionText}</p>
     </div>
     <div className="text-white flex flex-col gap-3 items-center ">
-        <button className="hover:bg-blue-700 p-1 border rounded-md w-36">Washington</button>
-        <button className="hover:bg-blue-700 p-1 border rounded-md w-36">san diego</button>
-        <button className="hover:bg-blue-700 p-1 border rounded-md w-36">sanfransisco</button>
-        <button className="hover:bg-blue-700 p-1 border rounded-md w-36">LA</button>
+
+    {Question[currentQuestion].answers.map(answer=>{
+
+        
+return <button className="hover:bg-blue-700 p-1 border rounded-md w-36">{answer.answerText}</button>
+    })}
+       
  
 
     </div>
