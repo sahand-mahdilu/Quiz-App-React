@@ -75,7 +75,7 @@ export default function QuizApp() {
     <div className="shadow-2xl Quiz_app rounded-xl mx-auto mt-24 p-5 w-[430px] h-[220px] bg-blue-900 flex gap-10 justify-center">
 
     <div className="text-white">
-        <p>Question 1/4</p>
+        <p>Question {currentQuestion+1}/4</p>
         <p className="pt-2 font-bold">{Question[currentQuestion].questionText}</p>
     </div>
     <div className="text-white flex flex-col gap-3 items-center ">
